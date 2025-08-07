@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Firebase Task Manager</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Firebase Task Manager</h1>
+    <div id="user-status"></div>
+    <label for="task-input">Add Task:</label>
+    <input type="text" id="task-input" placeholder="Write a new task..." />
+    <button id="add-task">Add</button>
+    <ul id="task-list"></ul>
+    <button id="sign-out" style="display:none;">Sign Out</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
