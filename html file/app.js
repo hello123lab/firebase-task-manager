@@ -1,15 +1,17 @@
 // Replace these with your Firebase project's config from the Firebase console!
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyBn-6_fM25GhTa_WvKA3HDjkpBqmDRuXFE",
+  authDomain: "fir-task-manager-36ab7.firebaseapp.com",
+  projectId: "fir-task-manager-36ab7",
+  storageBucket: "fir-task-manager-36ab7.firebasestorage.app",
+  messagingSenderId: "1093775456864",
+  appId: "1:1093775456864:web:7c4babe31990b3071a6105"
 };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 const auth = firebase.auth();
 const db = firebase.firestore();
